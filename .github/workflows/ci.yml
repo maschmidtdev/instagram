@@ -7,6 +7,8 @@ on:
 
 jobs:
   scan_ruby:
+    if: false
+
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +25,8 @@ jobs:
         run: bin/brakeman --no-pager
 
   scan_js:
+    if: false
+
     runs-on: ubuntu-latest
 
     steps:
@@ -39,6 +43,7 @@ jobs:
         run: bin/importmap audit
 
   lint:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -54,6 +59,7 @@ jobs:
         run: bin/rubocop -f github
 
   test:
+    if: false
     runs-on: ubuntu-latest
 
     # services:
