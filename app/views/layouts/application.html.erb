@@ -18,10 +18,9 @@
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
-    <div class="d-flex alignt-items-center justify-content-center mt-4">
-      <%= render "suggestion/suggestions_list" %>
-    </div>
+    <% if current_user %>
+      <%= render "layouts/navbar" %>
+    <% end %>  
     <%= yield %>
   </body>
 </html>
