@@ -33,7 +33,7 @@ gem "bootsnap", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
-gem 'bootstrap', '~> 5.2.0'
+gem 'bootstrap', '~> 5.3.3'
 gem 'devise'
 gem "font-awesome-sass", "~> 6.1.2"
 gem "activestorage-validator"
