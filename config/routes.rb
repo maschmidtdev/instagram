@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   post "toggle_like", to: "likes#toggle_like", as: :toggle_like
 
+  resources :comments, only: [:create, :destroy]
+
   # get "home/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
