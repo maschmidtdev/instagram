@@ -2,7 +2,7 @@
   <% notice.each do |n| %>
     <p class="alert alert-success"><%= n %></p>
   <% end %>
-<% elsif notice && notice.i_a?(String)%>
+<% elsif notice && notice.is_a?(String)%>
     <p class="alert alert-success"><%= notice %></p>
 <% end %>
 
