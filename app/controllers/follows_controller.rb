@@ -32,7 +32,7 @@ class FollowsController < ApplicationController
     @user = User.find(params[:user_id])
   end
 
-  def set_follow_req
+  def set_follow_request
     @follow_req = Follow.find(params[:follow_id])
   end
 
